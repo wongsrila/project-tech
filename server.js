@@ -1,5 +1,5 @@
 const express = require('express');
-const user = require('./model/users.js');
+// const user = require('./model/users.js');
 
 // express app
 const app = express();
@@ -17,7 +17,7 @@ app.get('/contact', contact);
 
 // functions
 function home(req, res) {
-    res.render('index', user);
+    res.render('index');
 }
 
 function about(req, res) {
